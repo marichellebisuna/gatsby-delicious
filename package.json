@@ -5,6 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.3",
+    "classy-nav": "^0.4.0",
     "gatsby": "^2.24.79",
     "gatsby-image": "^2.4.21",
     "gatsby-plugin-manifest": "^2.4.34",
@@ -13,10 +17,14 @@
     "gatsby-plugin-sharp": "^2.6.42",
     "gatsby-source-filesystem": "^2.3.34",
     "gatsby-transformer-sharp": "^2.5.17",
+    "jquery": "^3.5.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0",
+    "react-motion": "^0.5.2",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "prettier": "2.1.2"

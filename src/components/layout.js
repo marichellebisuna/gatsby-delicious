@@ -1,14 +1,23 @@
-import React from "react"
+import React, { useContext, useEffect } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
+import Navbar from "./Navbar"
+import Sidebar from "./Navbar/Sidebar"
 import "./layout.css"
+import { GatsbyContext } from "../context/context"
 
-const Layout = ({ children }) => 
+const Layout = ({ children }) => {
+  const { isSidebarOpen } = useContext(GatsbyContext)
+
+  return (
     <>
-     {children}
+      <Navbar />
+
+      {isSidebarOpen && <Sidebar />}
+
+      {children}
     </>
-  
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

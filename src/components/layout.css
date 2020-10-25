@@ -18,6 +18,7 @@
 @import url(../css/custom-icon.css);
 @import url(../css/classy-nav.min.css);
 @import url(../css/nice-select.min.css);
+@import url(../css/jquery.simpleTicker.css);
 /* :: 3.0 Base CSS */
 * {
   margin: 0;
@@ -455,7 +456,7 @@ textarea:focus {
 }
 
 /* :: 4.0 Search Wrapper */
-.search-wrapper {
+/* .search-wrapper {
   width: 100%;
   height: 70px;
   position: fixed;
@@ -517,15 +518,24 @@ textarea:focus {
 }
 .search-wrapper.on {
   top: 0;
-}
+} */
 
 /* :: 5.0 Header Area CSS */
-.header-area {
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.data-list {
+  height: 50px;
+  width: 200px;
+  overflow-y: hidden;
+}
+/* .header-area {
   position: relative;
   z-index: 100;
   width: 100%;
-}
-.header-area .top-header-area {
+} */
+/* .header-area .top-header-area {
   width: 100%;
   height: 50px;
   background-color: #ffffff;
@@ -577,8 +587,8 @@ textarea:focus {
 .header-area .top-header-area .top-social-info a:focus,
 .header-area .top-header-area .top-social-info a.active {
   color: #40ba37;
-}
-.header-area .delicious-main-menu {
+} */
+/* .header-area .delicious-main-menu {
   position: relative;
   width: 100%;
   z-index: 100;
@@ -702,7 +712,7 @@ textarea:focus {
   .header-area .nav-brand img {
     max-width: 90px;
   }
-}
+} */
 
 /* :: 6.0 Welcome Area CSS */
 .hero-area {
@@ -821,7 +831,7 @@ textarea:focus {
   color: #1c8314;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breakpoint-on .classynav ul li.cn-dropdown-item > a::after,
   .breakpoint-on .classynav ul li.megamenu-item > a::after {
     top: 10px;
@@ -832,7 +842,7 @@ textarea:focus {
   .breakpoint-on .classynav ul li.megamenu-item > a::after {
     top: 10px;
   }
-}
+} */
 
 /* :: 7.0 Top Catagory Area */
 .single-top-catagory {
