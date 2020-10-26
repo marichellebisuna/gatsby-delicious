@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { GatsbyContext } from "../../context/context"
@@ -7,10 +7,8 @@ const Sidebar = () => {
   const {
     isSidebarOpen,
     hideSidebar,
-
     isSearchbarOpen,
     hideSearchbar,
-
     showSearchbar,
   } = useContext(GatsbyContext)
 
